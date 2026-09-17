@@ -26,6 +26,10 @@ BarWidget {
     if (panelLoader.item) panelLoader.item.toggle()
   }
 
+  function toggleSizeEditor() {
+    if (panelLoader.item) panelLoader.item.toggleSizeEditor()
+  }
+
   readonly property bool opened: panelLoader.item ? panelLoader.item.opened === true : false
 
   function open() {
@@ -65,11 +69,12 @@ BarWidget {
     bar: root.bar
     text: ""
     slotSize: Style.bar.statusSlot
-    tooltipText: root.opened ? "" : "Scratchpad"
+    tooltipText: root.opened ? "" : "Scratchpad — right-click to resize"
 
     onPressed: function(b) {
       if (!root.bar) return
-      root.togglePanel()
+      if (b === Qt.RightButton) root.toggleSizeEditor()
+      else root.togglePanel()
     }
   }
 }

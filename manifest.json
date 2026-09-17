@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "acooper.scratchpad",
   "name": "Scratchpad",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "ACooperDev",
   "description": "Quick note pad that autosaves when dismissed",
   "kinds": ["bar-widget"],
