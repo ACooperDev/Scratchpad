@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "acooper.scratchpad",
+  "name": "Scratchpad",
+  "version": "1.0.0",
+  "author": "ACooperDev",
+  "description": "Quick note pad that autosaves when dismissed",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "BarWidget.qml" },
+  "barWidget": {
+    "displayName": "Scratchpad",
+    "description": "Quick note pad that autosaves when dismissed",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": {
+      "notePath": "",
+      "width": 340,
+      "height": 260,
+      "placeholder": "Scratchpad"
+    },
+    "schema": [
+      { "key": "notePath", "type": "string", "label": "Note file" },
+      { "key": "width", "type": "number", "label": "Panel width" },
+      { "key": "height", "type": "number", "label": "Panel height" },
+      { "key": "placeholder", "type": "string", "label": "Placeholder text" }
+    ]
+  }
+}
