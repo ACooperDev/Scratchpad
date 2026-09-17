@@ -5,6 +5,7 @@
   "version": "1.1.0",
   "author": "ACooperDev",
   "description": "Quick note pad that autosaves when dismissed",
+  "license": "MIT",
   "kinds": ["bar-widget"],
   "entryPoints": { "barWidget": "BarWidget.qml" },
   "barWidget": {
